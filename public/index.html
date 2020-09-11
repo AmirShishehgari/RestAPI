@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <title>Users</title>
+    <style>
+        .btn {
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body onload="userList()" class="container">
+    <div class="row mt-3">
+        <div class="col-12">
+            <div id="error"></div>
+            <h4>Add User</h4>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <input placeholder="Enter user name" class="form-control" id="getUser" type="text">
+                </div>
+                <div class="col-6">
+                    <button onclick="addUser()" class="btn btn-success">Add User</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-12">
+            <h3>Delete User By ID</h3>
+            <div class="row mt-2">
+                <div class="col-6">
+                    <input placeholder="Enter user id" class="form-control" id="getUserId" type="text">
+                </div>
+                <div class="col-6">
+                    <button onclick="deleteUser()" class="btn btn-danger">Delete User</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-12">
+            <h4>Edit User Name (which ID should be rename)</h4>
+            <div class="row mt-2">
+                <div class="col-3">
+                    <input placeholder="Enter user id" class="form-control" id="getUserEditId" type="text">
+                </div>
+                <div class="col-3">
+                    <input placeholder="Enter the name to be change" class="form-control" id="getUserEditName" type="text">
+                </div>
+                <div class="col-6">
+                    <button onclick="editUser()" class="btn btn-warning">Edit User</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div>
+        <div class="row mt-3">
+            <div class="col-12"> <br>
+                <hr>
+                <h3>All Users</h3>
+                <ul id="users" class="list-group">
+                </ul>
+            </div>
+
+        </div>
+        <script src="./script.js"></script>
+</body>
+
+</html>
