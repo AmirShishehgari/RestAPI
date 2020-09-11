@@ -1,0 +1,29 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/add-user
+Content-Type: application/json
+
+{
+    "name": "Amir"
+}
+###
+DELETE http://localhost:3000/delete-user
+Content-Type: application/json
+
+{
+  "id": 1
+}
+###
+PUT http://localhost:3000/edit-user
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Amir"
+}
+
+###
+
+
+
