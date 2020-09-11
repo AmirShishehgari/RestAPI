@@ -2,7 +2,7 @@ När man run projekt kommer och lista 10 username med email från External API o
 
 ## Run project
 ### `npm install`
-### `node app.js or npm start`
+### `npm start or node app.js`
 ### project external api
 https://jsonplaceholder.typicode.com/users/
 ## routes
