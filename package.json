@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "amir"
+    "url": "git+https://github.com/AmirShishehgari/RestAPI.git"
   },
   "author": "amir",
   "license": "ISC",
